@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sad Shayari - LIFEPEDIA</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefefe;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .shayari-block {
+      background-color: #ffffff;
+      border-left: 5px solid #000000;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .shayari-block p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .shayari-block button {
+      background-color: #000000;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .shayari-block button:hover {
+      background-color: #333;
+    }
+
+    footer {
+      background-color: #0f3c68;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #413f3f, #fff);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h2 {
+      color: #000000;
+      font-size: 32px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #000000;
+    }
+    /* Floating Heart Container */
+.floating-hearts {
+  position: fixed;
+  bottom: 0;
+  width: 100px;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-hearts.left {
+  left: 20px;
+}
+
+.floating-hearts.right {
+  right: 20px;
+}
+
+/* Heart Shape */
+.heart {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  transform: rotate(-45deg);
+  animation: floatUp 6s infinite ease-in-out;
+  opacity: 0.8;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 10px;
+}
+
+/* Animation */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(-45deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-200px) translateX(20px) rotate(-45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-400px) translateX(-20px) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+/* Heart animation delays */
+.heart.delay1 {
+  animation-delay: 2s;
+  left: 30px;
+}
+.heart.delay2 {
+  animation-delay: 4s;
+  left: 60px;
+}
+
+  </style>
+</head>
+
+<!-- Floating Black Hearts (Left & Right) -->
+<div class="floating-hearts left">
+  <div class="heart"></div>
+  <div class="heart delay1"></div>
+  <div class="heart delay2"></div>
+</div>
+
+<div class="floating-hearts right">
+  <div class="heart"></div>
+  <div class="heart delay1"></div>
+  <div class="heart delay2"></div>
+</div>
+
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🌟 Lifepedia</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="biographies.html">Biographies</a>
+      <a href="shayari.html">Shayari</a>
+      <a href="stories.html">Stories</a>
+      <a href="speeches.html">Speeches</a>
+      <a href="quotes.html">Quotes</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>💔 Sad Shayari</h2>
+    <p>Feel the pain through deep emotional lines.</p>
+  </section>
+
+  <!-- Shayari Section -->
+  <main>
+
+   <div class="shayari-block">
+  <p id="s31">31. जुदा होकर भी तू पास लगता है,<br>तेरी यादों में हर साँस लगता है।<br>कभी सोचा ना था तुझसे दूर होंगे,<br>अब तो खुद से ही विश्वास नहीं होता है।</p>
+  <button onclick="copyText('s31')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s32">32. एक ख्वाब था तुझमें जीने का,<br>अब हर सपना लगता है सीने का।<br>तेरे बिना जो दिन गुजरते हैं,<br>वो हर लम्हा लगता है जीने का।</p>
+  <button onclick="copyText('s32')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s33">33. तेरी हँसी अब मेरी तन्हाई बन गई,<br>तेरी बातों से मेरी खामोशी सज गई।<br>जिसे चाहा सबसे ज्यादा दुनिया में,<br>वही मेरी सबसे बड़ी जुदाई बन गई।</p>
+  <button onclick="copyText('s33')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s34">34. जो पास रहकर भी दूर हो जाए,<br>उस प्यार को कैसे भुलाया जाए।<br>हर सांस में तेरी तलाश है अब भी,<br>पर दिल को कैसे समझाया जाए?</p>
+  <button onclick="copyText('s34')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s35">35. मोहब्बत अधूरी सी रह गई,<br>तेरी खामोशी कुछ कह गई।<br>हमने तो सब कुछ लुटा दिया,<br>पर तू फिर भी अजनबी बन गई।</p>
+  <button onclick="copyText('s35')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s36">36. ना जाने क्यों तू याद आता है,<br>हर रात मेरी नींदें चुरा जाता है।<br>भुला चुके हैं सब तुझे शायद,<br>पर दिल अब भी तुझसे जुड़ जाता है।</p>
+  <button onclick="copyText('s36')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s37">37. तुम चले गए पर असर अब भी है,<br>इस दिल में तेरी चाहत अब भी है।<br>सोचते हैं हर रोज़ तुझे भूल जाएँ,<br>पर इस चाहत में ताक़त अब भी है।</p>
+  <button onclick="copyText('s37')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s38">38. जब कोई ख्वाब अधूरा रह जाए,<br>तो दिल हर पल तड़पता रह जाए।<br>तू दूर है पर एहसास पास है,<br>यही दर्द हर दिन जीता है और सुलगता रह जाए।</p>
+  <button onclick="copyText('s38')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s39">39. तेरे बाद अब किसी पर ऐतबार नहीं,<br>इस दिल में अब कोई प्यार नहीं।<br>हर मुस्कुराहट के पीछे है एक आँसू,<br>अब जीने में भी कोई करार नहीं।</p>
+  <button onclick="copyText('s39')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s40">40. कभी हँसते थे तेरे नाम से,<br>अब रोते हैं उसी जाम से।<br>तेरे जाने का ग़म इतना गहरा है,<br>के साँसें भी घुटती हैं तेरे इल्ज़ाम से।</p>
+  <button onclick="copyText('s40')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s41">41. दिल की आवाज़ कोई समझ न सका,<br>हमेशा अपना कहकर छोड़ गया।<br>कभी मुस्कुराया था जो नाम सुनकर,<br>आज वही नाम ग़म बन गया।</p>
+  <button onclick="copyText('s41')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s42">42. खो गए हैं अब तो ख्यालों में,<br>रातें गुजरती हैं सवालों में।<br>तू था मेरा सबसे प्यारा सच,<br>अब जी रहा हूँ मैं जालों में।</p>
+  <button onclick="copyText('s42')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s43">43. जब यादें चुभने लगें दिल में,<br>तो समझो दर्द बहुत गहरा है सिल में।<br>तेरे बिना जो जीना सीखा है,<br>वो जहर घुला है हर दिल में।</p>
+  <button onclick="copyText('s43')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s44">44. दिल लगाया था तुझसे सच्चाई से,<br>प्यार किया था हमने हर खामोशी से।<br>पर तूने हमें ही ग़लत समझा,<br>अब जी रहे हैं तेरी ही परछाई से।</p>
+  <button onclick="copyText('s44')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="s45">45. अब तन्हा रातों से दोस्ती हो गई,<br>तेरी यादों से रोज़ मुलाक़ात हो गई।<br>जो दिल कभी धड़कता था तेरे लिए,<br>अब उसी को शिकायतों की आदत हो गई।</p>
+  <button onclick="copyText('s45')">Copy Shayari</button>
+</div>
+
+
+
+    <!-- Add more sad shayari blocks here like s3, s4... -->
+
+  </main>
+
+  <!-- Pagination -->
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 40px;">
+  <a href="sad-shayari.html"
+     style="margin: 0 6px; text-decoration: none; color: #0f3c68; background-color: #e0e0e0; padding: 10px 18px; border-radius: 50px; font-weight: bold;">
+     1
+  </a>
+  <a href="sad-shayari2.html"
+     style="margin: 0 6px; text-decoration: none; color: #0f3c68; background-color: #e0e0e0; padding: 10px 18px; border-radius: 50px; font-weight: bold;">
+     2
+  </a>
+  <a href="sad-shayari3.html"
+     style="margin: 0 6px; text-decoration: none; color: white; background-color: #0f3c68; padding: 10px 18px; border-radius: 50px; font-weight: bold; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+     3
+  </a>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    © 2025 LIFEPEDIA | Created by Akash Arya
+  </footer>
+
+  <!-- Copy Script -->
+  <script>
+    function copyText(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text);
+      alert("Shayari copied!");
+    }
+  </script>
+
+</body>
+</html>

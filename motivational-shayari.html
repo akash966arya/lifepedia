@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motivation Shayari - LIFEPEDIA</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fefefe;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .shayari-block {
+      background-color: #ffffff;
+      border-left: 5px solid #f20707;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .shayari-block p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .shayari-block button {
+      background-color: #d41d1d;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .shayari-block button:hover {
+      background-color: #333;
+    }
+
+    footer {
+      background-color: #0f3c68;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #e00e0e, #fff);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h2 {
+      color: #0a0606;
+      font-size: 32px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #0e0a0a;
+    }
+
+    /* Floating Fire Container */
+.floating-fire {
+  position: fixed;
+  bottom: 0;
+  width: 100px;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  font-size: 36px;
+}
+
+.floating-fire.left {
+  left: 20px;
+}
+
+.floating-fire.right {
+  right: 20px;
+}
+
+/* Fire emoji style */
+.fire {
+  position: absolute;
+  bottom: 0;
+  animation: floatFire 6s infinite ease-in-out;
+  opacity: 0.9;
+}
+
+/* Animation */
+@keyframes floatFire {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-200px) translateX(20px) rotate(5deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-400px) translateX(-20px) rotate(-5deg);
+    opacity: 0;
+  }
+}
+
+/* Fire delays */
+.fire.delay1 {
+  animation-delay: 2s;
+  left: 30px;
+}
+.fire.delay2 {
+  animation-delay: 4s;
+  left: 60px;
+}
+
+  </style>
+</head>
+<!-- Floating Fire Emojis -->
+<div class="floating-fire left">
+  <div class="fire">🔥</div>
+  <div class="fire delay1">🔥</div>
+  <div class="fire delay2">🔥</div>
+</div>
+
+<div class="floating-fire right">
+  <div class="fire">🔥</div>
+  <div class="fire delay1">🔥</div>
+  <div class="fire delay2">🔥</div>
+</div>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🌟 Lifepedia</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="biographies.html">Biographies</a>
+      <a href="shayari.html">Shayari</a>
+      <a href="stories.html">Stories</a>
+      <a href="speeches.html">Speeches</a>
+      <a href="quotes.html">Quotes</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Motivational Shayari</h2>
+    <p>Inspire your soul with powerful lines.</p>
+  </section>
+
+  <!-- Shayari Section -->
+  <main>
+
+    <div class="shayari-block">
+  <p id="m1">1. मुश्किलों से डर कर रास्ते नहीं बदलते,<br>जो ठान लें कुछ करने का, वो हालात नहीं टालते।<br>हर हार सिखाती है कुछ नया,<br>कामयाब वही हैं जो कभी हार नहीं मानते।</p>
+  <button onclick="copyText('m1')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m2">2. सपनों को साकार करना है अगर,<br>तो वक्त को पहचानो और खुद पर ऐतबार करो।<br>रास्ते मुश्किल ज़रूर होंगे,<br>मगर तुम बस चलते रहो, इंतज़ार मत करो।</p>
+  <button onclick="copyText('m2')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m3">3. थक कर बैठ जाना मंज़िल नहीं होती,<br>जो जले हो अंदर से वही रौशनी बनते हैं।<br>जिन्हें कुछ कर दिखाना होता है,<br>वो हालातों से लड़कर ही उभरते हैं।</p>
+  <button onclick="copyText('m3')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m4">4. आज जो दर्द देता है वो कल ताक़त बनेगा,<br>जो सब्र रखता है वही तो कुछ बनेगा।<br>सपनों की उड़ान आसान नहीं होती,<br>पर उड़ने वाला हर बंदा खास बनेगा।</p>
+  <button onclick="copyText('m4')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m5">5. मत रुकना तू जब तक मंज़िल ना पा जाए,<br>हर कदम तेरे हौसले की गवाही बन जाए।<br>जो हार से डरते हैं, वो जीत नहीं पाते,<br>जो लड़ते हैं अंधेरों से, वही रौशनी लाते।</p>
+  <button onclick="copyText('m5')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m6">6. मेहनत करने वालों की कभी हार नहीं होती,<br>हर सुबह एक नया इम्तिहान होती।<br>जिनमें जुनून होता है कुछ कर दिखाने का,<br>उनकी हर राह आसान होती।</p>
+  <button onclick="copyText('m6')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m7">7. मत सोचो कि अकेले हो इस लड़ाई में,<br>हर मुश्किल तुम्हें मज़बूत बनाने आई है।<br>जिसने अंधेरे को अपना दोस्त बना लिया,<br>सफलता उसी की परछाई है।</p>
+  <button onclick="copyText('m7')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m8">8. जीतने की जिद हो तो रास्ता निकल ही आता है,<br>समुंदर भी रास्ता देता है जब साहस जताया जाता है।<br>हर गिरावट में सीख छुपी होती है,<br>उठकर चलने वाला ही कुछ कर पाता है।</p>
+  <button onclick="copyText('m8')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m9">9. तू बस मेहनत करता जा, वक्त तेरे साथ चलेगा,<br>हर नकारात्मक सोच तुझसे दूर भागेगा।<br>जिसने खुद को खुद से बड़ा बनाया,<br>उसने ही जीत का परचम लहराया।</p>
+  <button onclick="copyText('m9')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m10">10. गिरना, संभलना और फिर से उठना,<br>यही तो है असली ज़िंदगी को जीना।<br>जो हर बार उठते हैं गिरकर,<br>वही तो बनते हैं मिसाल जीने की।</p>
+  <button onclick="copyText('m10')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m11">11. अपने सपनों की कीमत समझो,<br>हर सुबह को एक नई शुरुआत समझो।<br>जो जलते हैं अंदर से कामयाबी की आग में,<br>वही लोग दुनिया में पहचान बनाते हैं।</p>
+  <button onclick="copyText('m11')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m12">12. जब ठान लो तो मुश्किल कुछ भी नहीं,<br>चाहे राहों में हो धूप या छाँव कहीं।<br>जो रुकते नहीं हार के डर से,<br>वही इतिहास रचते हैं हर जगह कहीं।</p>
+  <button onclick="copyText('m12')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m13">13. सपनों को सिर्फ देखा नहीं जाता,<br>उन्हें जिया भी जाता है।<br>जो खुद पर यकीन रखते हैं,<br>वही हर मुश्किल से लड़ जाते हैं।</p>
+  <button onclick="copyText('m13')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m14">14. जब लोग तुम्हें कम आंकें,<br>तब खुद को साबित करने की ठान लें।<br>दुनिया को जवाब शब्दों से नहीं,<br>अपने काम से दो और पहचान बना लें।</p>
+  <button onclick="copyText('m14')">Copy Shayari</button>
+</div>
+
+<div class="shayari-block">
+  <p id="m15">15. मत थको, मत रुको, आगे बढ़ो,<br>हर मुश्किल से लड़ो और खुद से भिड़ो।<br>तुम्हारा हौसला ही तुम्हारी जीत है,<br>बस वक्त का इंतज़ार मत करो, जीत की रीत रखो।</p>
+  <button onclick="copyText('m15')">Copy Shayari</button>
+</div>
+
+  </main>
+
+  <!-- Pagination -->
+  <div style="display: flex; justify-content: center; align-items: center; margin-top: 40px;">
+  <a href="motivational-shayari.html"
+     style="margin: 0 6px; text-decoration: none; color: white; background-color: #0f3c68; padding: 10px 18px; border-radius: 50px; font-weight: bold; box-shadow: 0 2px 6px rgba(0,0,0,0.15);">
+     1
+  </a>
+  <a href="motivational-shayari2.html"
+     style="margin: 0 6px; text-decoration: none; color: #0f3c68; background-color: #e0e0e0; padding: 10px 18px; border-radius: 50px; font-weight: bold;">
+     2
+  </a>
+  <a href="motivational-shayari3.html"
+     style="margin: 0 6px; text-decoration: none; color: #0f3c68; background-color: #e0e0e0; padding: 10px 18px; border-radius: 50px; font-weight: bold;">
+     3
+  </a>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 LIFEPEDIA | Created by Akash Arya
+  </footer>
+
+  <!-- Copy Script -->
+  <script>
+    function copyText(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text);
+      alert("Shayari copied!");
+    }
+  </script>
+
+</body>
+</html>

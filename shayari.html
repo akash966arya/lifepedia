@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biographies - LIFEPEDIA</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .bio-hero {
+      background: linear-gradient(to right, #d7e9ff, #ffffff);
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .bio-hero h2 {
+      font-size: 32px;
+      color: #0f3c68;
+    }
+
+    .bio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .bio-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .bio-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .bio-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .bio-card .content {
+      padding: 20px;
+    }
+
+    .bio-card h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #0f3c68;
+    }
+
+    .bio-card p {
+      margin: 10px 0 20px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .bio-card a {
+      display: inline-block;
+      background-color: #0f3c68;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .bio-card a:hover {
+      background-color: #062d50;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🌟 LIFEPEDIA</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="biographies.html">Biographies</a>
+      <a href="shayari.html">Shayari</a>
+      <a href="stories.html">Stories</a>
+      <a href="speeches.html">Speeches</a>
+      <a href="quotes.html">Quotes</a>
+    </nav>
+  </header>
+
+  <section style="text-align: center; margin-top: 40px;">
+  <input type="text" id="bioSearch" placeholder="Type a shayari e.g. love-shayari" style="padding: 10px; width: 300px; font-size: 16px; border-radius: 8px; border: 1px solid #ccc;">
+  <button onclick="searchBiography()" style="padding: 10px 20px; margin-left: 10px; border: none; background-color: #0f3c68; color: white; border-radius: 8px; cursor: pointer;">Search</button>
+</section>
+
+<!-- Message area -->
+<p id="searchResult" style="text-align: center; margin-top: 20px; font-size: 16px; color: red;"></p>
+
+
+  <!-- Hero Section -->
+   <section class="hero">
+      <h2>✨ Shayari Collection</h2>
+      <p>Feel the words that touch your heart — Love, Pain, Motivation, and more...</p>
+    </section>
+    
+
+  <!-- Bio Grid -->
+  <section class="bio-grid">
+    
+    <div class="bio-card">
+      <img src="/img/love.png" alt="love">
+      <div class="content">
+        <h3>❤️ Love Shayari</h3>
+        <p>Romantic lines that melt hearts..</p>
+        <a href="love-shayari.html">Read More</a>
+      </div>
+    </div>
+    
+
+    <div class="bio-card">
+    <img src="/img/sad.jpg" alt="Sad Shayari">
+    <div class="content">
+      <h3>❤︍ Sad Shayari</h3>
+      <p>When words express your pain.</p>
+      <a href="sad-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="/img/eagle.png" alt="Motivational Shayari">
+    <div class="content">
+      <h3>💪 Motivational Shayari</h3>
+      <p>Inspire your soul with powerful lines.</p>
+      <a href="motivational-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="/img/funny.jpg" alt="Funny Shayari">
+    <div class="content">
+      <h3>😂 Funny Shayari</h3>
+      <p>Bring a smile with fun-filled poetry.</p>
+      <a href="funny-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="/img/Friendship.jpg" alt="Friendship Shayari">
+    <div class="content">
+      <h3>🤝 Friendship Shayari</h3>
+      <p>Celebrate true friendship with words.</p>
+      <a href="friendship-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="/img/alone man.jpg" alt="Life Shayari">
+    <div class="content">
+      <h3>🕊️ Life Shayari</h3>
+      <p>Reflections on life, destiny, and dreams.</p>
+      <a href="life-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="/img/Attitude.jpg" alt="Attitude Shayari">
+    <div class="content">
+      <h3>🔥 Attitude Shayari</h3>
+      <p>Bold lines to express your fearless swag.</p>
+      <a href="attitude-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="/img/sleep.jpg" alt="Good Night Shayari">
+    <div class="content">
+      <h3>🌚 Good Night Shayari</h3>
+      <p>End your day with peaceful thoughts.</p>
+      <a href="good-night-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="/img/morning.jpg" alt="Good Morning Shayari">
+    <div class="content">
+      <h3>☕️ Good Morning Shayari</h3>
+      <p>Start your day with lovely shayari.</p>
+      <a href="good-morning-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="/img/romantic.jpg" alt="Romantic Shayari">
+    <div class="content">
+      <h3>😘 Romantic Shayari</h3>
+      <p>Passionate and charming lines for your love.</p>
+      <a href="romantic-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="/img/broken.jpg" alt="Dard Shayari">
+    <div class="content">
+      <h3>🤌 Dard Shayari</h3>
+      <p>Heart-touching poetry of sorrow and pain.</p>
+      <a href="dard-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="img/hindi.png" alt="Hindi Shayari">
+    <div class="content">
+      <h3>Hindi Shayari</h3>
+      <p>Shayari in your mother tongue.</p>
+      <a href="hindi-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="img/spiritual.png" alt="Spiritual Shayari">
+    <div class="content">
+      <h3>🙏 Spiritual Shayari</h3>
+      <p>Words that touch your soul spiritually.</p>
+      <a href="spiritual-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="img/birthday.png" alt="Birthday Shayari">
+    <div class="content">
+      <h3>🎂 Birthday Shayari</h3>
+      <p>Wish with meaningful birthday lines.</p>
+      <a href="birthday-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="img/royal.png" alt="Royal Shayari">
+    <div class="content">
+      <h3>👑 Royal Shayari</h3>
+      <p>Stylish and majestic attitude quotes.</p>
+      <a href="royal-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="img/onesided.png" alt="One Sided Love Shayari">
+    <div class="content">
+      <h3>🤍 One Sided Love Shayari</h3>
+      <p>Silent feelings for the one who doesn't know.</p>
+      <a href="one-sided-love-shayari.html">Read More</a>
+    </div>
+  </div>
+
+    <div class="bio-card">
+    <img src="img/motivational.png" alt="Motivational Shayari">
+    <div class="content">
+      <h3>💪 Motivational Shayari</h3>
+      <p>Inspire your soul with powerful lines.</p>
+      <a href="motivational-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="img/funny.png" alt="Funny Shayari">
+    <div class="content">
+      <h3>😂 Funny Shayari</h3>
+      <p>Bring a smile with fun-filled poetry.</p>
+      <a href="funny-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="img/friendship.png" alt="Friendship Shayari">
+    <div class="content">
+      <h3>🤝 Friendship Shayari</h3>
+      <p>Celebrate true friendship with words.</p>
+      <a href="friendship-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="img/life.png" alt="Life Shayari">
+    <div class="content">
+      <h3>🕊️ Life Shayari</h3>
+      <p>Reflections on life, destiny, and dreams.</p>
+      <a href="life-shayari.html">Read More</a>
+    </div>
+  </div>
+
+  <div class="bio-card">
+    <img src="img/attitude.png" alt="Attitude Shayari">
+    <div class="content">
+      <h3>🔥 Attitude Shayari</h3>
+      <p>Bold lines to express your fearless swag.</p>
+      <a href="attitude-shayari.html">Read More</a>
+    </div>
+  </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 LIFEPEDIA | Created by Akash Arya
+  </footer>
+
+  <script>
+  function searchBiography() {
+    const query = document.getElementById("bioSearch").value.trim().toLowerCase();
+    const result = document.getElementById("searchResult");
+
+    // Known biographies
+    const bios = {
+      "virat kohli": "virat-kohli.html",
+      "ratan tata": "ratan-tata.html"
+    };
+
+    if (bios[query]) {
+      // Redirect to known biography page
+      window.location.href = bios[query];
+    } else if (query.length > 0) {
+      // Show coming soon message
+      result.innerHTML = `"${query.charAt(0).toUpperCase() + query.slice(1)}" biography coming soon!`;
+    } else {
+      result.innerHTML = "Please enter a name to search.";
+    }
+  }
+</script>
+
+</body>
+</html>

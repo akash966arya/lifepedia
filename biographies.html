@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biographies - LIFEPEDIA</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .bio-hero {
+      background: linear-gradient(to right, #d7e9ff, #ffffff);
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .bio-hero h2 {
+      font-size: 32px;
+      color: #0f3c68;
+    }
+
+    .bio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .bio-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .bio-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .bio-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .bio-card .content {
+      padding: 20px;
+    }
+
+    .bio-card h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #0f3c68;
+    }
+
+    .bio-card p {
+      margin: 10px 0 20px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .bio-card a {
+      display: inline-block;
+      background-color: #0f3c68;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .bio-card a:hover {
+      background-color: #062d50;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🌟 LIFEPEDIA</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="biographies.html">Biographies</a>
+      <a href="shayari.html">Shayari</a>
+      <a href="stories.html">Stories</a>
+      <a href="speeches.html">Speeches</a>
+      <a href="quotes.html">Quotes</a>
+    </nav>
+  </header>
+
+  <section style="text-align: center; margin-top: 40px;">
+  <input type="text" id="bioSearch" placeholder="Type a name e.g. Ratan Tata" style="padding: 10px; width: 300px; font-size: 16px; border-radius: 8px; border: 1px solid #ccc;">
+  <button onclick="searchBiography()" style="padding: 10px 20px; margin-left: 10px; border: none; background-color: #0f3c68; color: white; border-radius: 8px; cursor: pointer;">Search</button>
+</section>
+
+<!-- Message area -->
+<p id="searchResult" style="text-align: center; margin-top: 20px; font-size: 16px; color: red;"></p>
+
+
+  <!-- Hero Section -->
+   <section class="hero">
+      <h2>📘 Inspiring Biographies</h2>
+      <p>Read stories of great personalities who changed the world!</p>
+    </section>
+    
+
+  <!-- Bio Grid -->
+  <section class="bio-grid">
+    <div class="bio-card">
+      <img src="/img/kohli 1.jpg" alt="Virat Kohli">
+      <div class="content">
+        <h3>Virat Kohli</h3>
+        <p>Modern-day cricket legend and passionate Indian icon.</p>
+        <a href="virat-kohli.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/ratan tata 3.jpg" alt="Ratan Tata">
+      <div class="content">
+        <h3>Ratan Tata</h3>
+        <p>India's most respected businessman and philanthropist.</p>
+        <a href="ratan-tata.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/apj abdul kalam.jpg" alt="APJ Abdul Kalam">
+      <div class="content">
+        <h3>Dr. APJ Abdul Kalam</h3>
+        <p>Missile Man, visionary, and President of India.</p>
+        <a href="apj-abdul-kalam.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/kalpna chawla.jpg" alt="Kalpana Chawla">
+      <div class="content">
+        <h3>Kalpana Chawla</h3>
+        <p>First Indian woman in space and eternal inspiration.</p>
+        <a href="kalpana-chawla.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/elon musk.jpg" alt="Elon Musk">
+      <div class="content">
+        <h3>Elon Musk</h3>
+        <p>CEO of Tesla, SpaceX, and xAI — modern visionary.</p>
+        <a href="elon-musk.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/tylor.jpg" alt="Taylor Swift">
+      <div class="content">
+        <h3>Taylor Swift</h3>
+        <p>Global pop icon and songwriter of the decade.</p>
+        <a href="taylor-swift.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/messi.jpg" alt="Lionel Messi">
+      <div class="content">
+        <h3>Lionel Messi</h3>
+        <p>Football legend now shining in MLS with Inter Miami.</p>
+        <a href="lionel-messi.html">Read More</a>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="bio-card">
+      <img src="/img/ronaldo.jpg" alt="Cristiano Ronaldo">
+      <div class="content">
+        <h3>Cristiano Ronaldo</h3>
+        <p>Football superstar and Al Nassr sensation.</p>
+        <a href="cristiano-ronaldo.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/donald.jpg" alt="Donald Trump">
+      <div class="content">
+        <h3>Donald Trump</h3>
+        <p>Former US President with continued influence.</p>
+        <a href="donald-trump.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/modi.jpg" alt="Narendra Modi">
+      <div class="content">
+        <h3>Narendra Modi</h3>
+        <p>Prime Minister of India and world leader.</p>
+        <a href="narendra-modi.html">Read More</a>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="bio-card">
+      <img src="/img/kylie.jpg" alt="Kylie Jenner">
+      <div class="content">
+        <h3>Kylie Jenner</h3>
+        <p>Beauty mogul, influencer and businesswoman.</p>
+        <a href="kylie-jenner.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/travis.jpg" alt="Travis Kelce">
+      <div class="content">
+        <h3>Travis Kelce</h3>
+        <p>NFL star known for on-field and off-field fame.</p>
+        <a href="travis-kelce.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/neymar 2.jpg" alt="Neymar Jr.">
+      <div class="content">
+        <h3>Neymar Jr.</h3>
+        <p>Brazilian footballer and global sensation.</p>
+        <a href="neymar-jr.html">Read More</a>
+      </div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="bio-card">
+      <img src="/img/Emma Watson 1.jpg" alt="Emma Watson">
+      <div class="content">
+        <h3>Emma Watson</h3>
+        <p>Actress and feminist icon.</p>
+        <a href="emma-watson.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/Shah Rukh Khan 1.jpg" alt="Shah Rukh Khan">
+      <div class="content">
+        <h3>Shah Rukh Khan</h3>
+        <p>Bollywood king and global movie star.</p>
+        <a href="shah-rukh-khan.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/Barack Obama 1.jpg" alt="Barack Obama">
+      <div class="content">
+        <h3>Barack Obama</h3>
+        <p>Former US President and global speaker.</p>
+        <a href="barack-obama.html">Read More</a>
+      </div>
+    </div>
+
+    <!-- Row 5 -->
+    <div class="bio-card">
+      <img src="/img/Kylian Mbappé 1.jpeg" alt="Kylian Mbappé">
+      <div class="content">
+        <h3>Kylian Mbappé</h3>
+        <p>Young football star and World Cup hero.</p>
+        <a href="kylian-mbappe.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/Selena Gomez 1.webp" alt="Selena Gomez">
+      <div class="content">
+        <h3>Selena Gomez</h3>
+        <p>Singer, actress, and Rare Beauty founder.</p>
+        <a href="selena-gomez.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/Greta Thunberg 1.jpg" alt="Greta Thunberg">
+      <div class="content">
+        <h3>Greta Thunberg</h3>
+        <p>Young climate activist and global voice.</p>
+        <a href="greta-thunberg.html">Read More</a>
+      </div>
+    </div>
+
+    <!-- Row 6 -->
+    <div class="bio-card">
+      <img src="/img/Zendaya 2.jpg" alt="Zendaya">
+      <div class="content">
+        <h3>Zendaya</h3>
+        <p>Actress, fashion icon, and Gen Z star.</p>
+        <a href="zendaya.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/Billie Eilish 1.webp" alt="Billie Eilish">
+      <div class="content">
+        <h3>Billie Eilish</h3>
+        <p>Music sensation with a unique voice.</p>
+        <a href="billie-eilish.html">Read More</a>
+      </div>
+    </div>
+
+    <div class="bio-card">
+      <img src="/img/Deepika Padukone 1.jpg" alt="Deepika Padukone">
+      <div class="content">
+        <h3>Deepika Padukone</h3>
+        <p>Bollywood actress and mental health advocate.</p>
+        <a href="deepika-padukone.html">Read More</a>
+      </div>
+    </div>
+
+    <!-- Row 7 -->
+    <div class="bio-card">
+      <img src="/img/beast.jpg" alt="MrBeast">
+      <div class="content">
+        <h3>MrBeast</h3>
+        <p>YouTube king, philanthropist, and viral creator.</p>
+        <a href="mrbeast.html">Read More</a>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 LIFEPEDIA | Created by Akash Arya
+  </footer>
+
+  <script>
+  function searchBiography() {
+    const query = document.getElementById("bioSearch").value.trim().toLowerCase();
+    const result = document.getElementById("searchResult");
+
+    // Known biographies
+    const bios = {
+      "virat kohli": "virat-kohli.html",
+      "ratan tata": "ratan-tata.html",
+      "apj abdul kalam": "apj-abdul-kalam.html",
+      "kalpana chawla": "kalpana-chawla.html",
+      "elon musk": "elon-musk.html",
+      "elon": "elon-msuk.html",
+      "taylor swift": "taylor-swift.html",
+      "lionel messi": "lionel-messi.html",
+      "cristiano ronaldo": "cristiano-ronaldo.html",
+      "donald trump": "donald-trump.html",
+      "narendra modi": "narendra-modi.html",
+      "kylie jenner": "kylie-jenner.html",
+      "travis kelce": "travis-kelce.html",
+      "neymar jr": "neymar-jr.html",
+      "emma watson": "emma-watson.html",
+      "shah rukh khan": "shah-rukh-khan.html",
+      "barack obama": "barack-obama.html",
+      "kylian mbappé": "kylian-mbappe.html",
+      "selena gomez": "selena-gomez.html",
+      "greta thunberg": "greta-thunberg.html",
+      "zendaya": "zendaya.html",
+      "billie eilish": "billie-eilish.html",
+      "deepika padukone": "deepika-padukone.html",
+      "mrbeast": "mrbeast.html"
+      
+    };
+
+    if (bios[query]) {
+      // Redirect to known biography page
+      window.location.href = bios[query];
+    } else if (query.length > 0) {
+      // Show coming soon message
+      result.innerHTML = `"${query.charAt(0).toUpperCase() + query.slice(1)}" biography coming soon!`;
+    } else {
+      result.innerHTML = "Please enter a name to search.";
+    }
+  }
+</script>
+
+
+</body>
+</html>

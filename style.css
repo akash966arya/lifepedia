@@ -1,0 +1,97 @@
+/* Reset & Base Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Inter', sans-serif;
+  background-color: #fefefe;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #0f3c68;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #eaf3fc, #f9fcff);
+  text-align: center;
+  padding: 60px 20px 40px;
+  border-bottom: 1px solid #dbe4f0;
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: #0f3c68;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Category Cards */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px 40px;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0f3c68;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer */
+footer {
+  background-color: #0f3c68;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
